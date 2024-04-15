@@ -14,6 +14,9 @@ let package = Package(
             targets: ["OBUSDK"]
         ),
     ],
+     dependencies: [
+            .package(url: "https://github.com/realm/realm-swift.git", from: "10.49.1") // Adjust the RealmSwift version as needed
+        ],
     targets: [
        .binaryTarget(
                    name: "OBUSDK",
