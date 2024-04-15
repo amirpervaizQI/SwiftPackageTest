@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "OBUSDK",
+    name: "OBUSDKTEST",
     platforms: [
         .iOS(.v13) // Adjust the iOS version as needed
     ],
