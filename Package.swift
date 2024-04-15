@@ -11,6 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "OBUSDK", // This should match the module name of your framework
+            type: .dynamic,
             targets: ["OBUSDK"]
         ),
     ],
