@@ -4,22 +4,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "OBUSDK",
+  name: "OBUSDK",
     platforms: [
-        .iOS(.v13) // Adjust the iOS version as needed
+      .iOS(.v13)
     ],
-    products: [
-        .library(
-            name: "OBUSDK", // This should match the module name of your framework
-            type: .dynamic,
-            targets: ["OBUSDK"]
-        ),
-    ],    
-    targets: [
-       .binaryTarget(
-                   name: "OBUSDK",
-                    url: "https://extol.mycloudrepo.io/public/repositories/obusdk-ios/extol-1.0.3-beta.40.zip", // Replace with the URL to your XCFramework
-                    checksum: "bef7a0a78f690c32e6d9202a3379ca70a215351a0e913780c93cbd830f039bb4" // Replace with the checksum of your XCFramework
-               ),
-    ]
+  products: [
+    .library(
+        name: "OBUSDK",
+        targets: ["OBUSDK"]
+    )
+  ],
+  targets: [
+    .binaryTarget(
+      name: "OBUSDK",
+      url: "https://extol.mycloudrepo.io/public/repositories/obusdk-ios/OBUSDK.xcframework.zip",
+      checksum: "7c7cb4f2895a89e71ccc4e208bd66dc81e5b02240dcfbe6f2918cb1466e7c87a"
+    )
+  ]
 )
