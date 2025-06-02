@@ -18,7 +18,7 @@ let package = Package(
     .binaryTarget(
       name: "OBUSDK",
       url: "https://extol.mycloudrepo.io/public/repositories/obusdk-ios/OBUSDK.xcframework.zip",
-      checksum: "ecc369199e12de49920c9f15ac4253b5315c45a6d7c313976a64c6df96ad642d"
+      checksum: "7a108ac8367ad75dd3da99d6d60d19371060d7e7cb484367e631c64756db5caf"
     )
   ]
 )
